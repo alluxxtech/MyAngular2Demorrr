@@ -9,10 +9,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.pageHeader = null /*'Employee Details'*/;
+        this.pageHeader = 'Employee Details';
         this.imagePath = '/image/dog.jpg';
         this.firstName = 'Peter';
         this.lastName = 'Pen';
+        this.isDisabled = true;
+        this.badHtml = '<b>hello</b> <script>alert("Hacked");</script>';
     }
     AppComponent.prototype.getFullName = function () {
         return this.firstName + " " + this.lastName;
