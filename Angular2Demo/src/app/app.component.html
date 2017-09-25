@@ -1,6 +1,8 @@
 ﻿<div>
     <h1>
-        {{pageHeader}}
+        {{pageHeader ? pageHeader: 'No Header'}}
     </h1>
+    <h2>{{getFullName()}}</h2>
+    <img src="{{imagePath}}" alt="Alternate Text" />
     <my-employee></my-employee>
 </div>
