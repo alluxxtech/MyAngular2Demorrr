@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var EmployeeComponent = (function () {
     function EmployeeComponent() {
+        this.colSpan = 2;
         this.firstName = 'Tom';
         this.lastName = 'Hopkins';
         this.gender = 'Male';

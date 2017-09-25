@@ -9,3 +9,6 @@
 td {
     border: 1px solid #ff0000;
 }
+thead {
+    border: 1px solid black;
+}
