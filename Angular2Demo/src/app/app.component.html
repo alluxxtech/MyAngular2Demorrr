@@ -1,16 +1,5 @@
-﻿<button style = "color:red"
-    [style.font-weight]="isBold? 'bold' : 'normal'">
-    my Button
+﻿<button (click) ="onClickMe()">
+    click me
 </button>
 
-<br />
-<br />
-
-<button [style.font-size.px]="fontSize">
-    My button2
-</button>
-<br />
-<br />
-<button [ngStyle]="addStyle()">
-    my button3
-</button>
+<my-employee></my-employee>
