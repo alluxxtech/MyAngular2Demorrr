@@ -5,15 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: 'app/app.component.html'
 })
 export class AppComponent  {
-//    pageHeader: string = 'Employee Details';
-//    imagePath: string = '/image/dog.jpg';
-//    firstName: string = 'Peter';
-//    lastName: string = 'Pen';
-//    isDisabled: boolean = true;
-//    badHtml: string = '<b>hello</b> <script>alert("Hacked");</script>';
-//    getFullName(): string {
-//    return this.firstName + " " + this.lastName;
-//}
+    classesToApply: string = 'italicClass boldClass';
+    applyBoldClass: boolean = false;
+    applyItalicClass: boolean = true;
 
-
+    addClasses() {
+        let classes = {
+            boldClass: this.applyBoldClass,
+            italicClass: this.applyItalicClass
+        };
+        return classes;
+    }
 }

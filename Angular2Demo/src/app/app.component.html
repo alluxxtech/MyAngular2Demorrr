@@ -1,15 +1,12 @@
-﻿<div>
-    <!--<h1>
-        {{pageHeader ? pageHeader: 'No Header'}}
-    </h1>
-    <h2>{{getFullName()}}</h2>
-    <img src="{{imagePath}}" alt="Alternate Text" />-->
-    <my-employee></my-employee>
-    <!--<button [disabled]="isDisabled">
-        Click me
-    </button>
-    <span bind-innerHtml = "pageHeader"></span>
-    <div >{{badHtml}}</div>
-    <div [innerHtml]="badHtml"></div>
-    <input type="text" Id="inputId" value="Tom" />-->
-</div>  
+﻿<button class="colorClass" [class]="classesToApply">
+    My Button
+</button>
+<br />
+<br />
+<button [class.boldClass] = "applyBoldClass">
+    My Button1
+</button>
+
+<br />
+<br />
+<button [ngClass]="addClasses()">My button3</button>
