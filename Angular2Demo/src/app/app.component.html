@@ -1,12 +1,16 @@
-﻿<button class="colorClass" [class]="classesToApply">
-    My Button
-</button>
-<br />
-<br />
-<button [class.boldClass] = "applyBoldClass">
-    My Button1
+﻿<button style = "color:red"
+    [style.font-weight]="isBold? 'bold' : 'normal'">
+    my Button
 </button>
 
 <br />
 <br />
-<button [ngClass]="addClasses()">My button3</button>
+
+<button [style.font-size.px]="fontSize">
+    My button2
+</button>
+<br />
+<br />
+<button [ngStyle]="addStyle()">
+    my button3
+</button>

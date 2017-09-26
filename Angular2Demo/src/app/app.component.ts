@@ -5,15 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: 'app/app.component.html'
 })
 export class AppComponent  {
-    classesToApply: string = 'italicClass boldClass';
-    applyBoldClass: boolean = false;
-    applyItalicClass: boolean = true;
+    isBold: boolean = true;
+    fontSize: number = 30;
+    isItalic: boolean = true;
 
-    addClasses() {
-        let classes = {
-            boldClass: this.applyBoldClass,
-            italicClass: this.applyItalicClass
+    addStyle() {
+        let styles = {
+            'font-weight': this.isBold ? 'bold' : 'normal',
+            'font-style': this.isItalic ? 'italic' : 'normal',
+            'font-size.px': this.fontSize
         };
-        return classes;
+        return styles;
     }
 }

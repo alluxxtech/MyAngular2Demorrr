@@ -9,16 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.classesToApply = 'italicClass boldClass';
-        this.applyBoldClass = false;
-        this.applyItalicClass = true;
+        this.isBold = true;
+        this.fontSize = 30;
+        this.isItalic = true;
     }
-    AppComponent.prototype.addClasses = function () {
-        var classes = {
-            boldClass: this.applyBoldClass,
-            italicClass: this.applyItalicClass
+    AppComponent.prototype.addStyle = function () {
+        var styles = {
+            'font-weight': this.isBold ? 'bold' : 'normal',
+            'font-style': this.isItalic ? 'italic' : 'normal',
+            'font-size.px': this.fontSize
         };
-        return classes;
+        return styles;
     };
     return AppComponent;
 }());
